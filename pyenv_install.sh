@@ -50,6 +50,7 @@ if [ -n "${USE_GIT_URI}" ]; then
 else
   GITHUB="https://github.com"
 fi
+GITHUB="git://github.com"
 
 checkout "${GITHUB}/pyenv/pyenv.git"            "${PYENV_ROOT}"
 checkout "${GITHUB}/pyenv/pyenv-doctor.git"     "${PYENV_ROOT}/plugins/pyenv-doctor"
